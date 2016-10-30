@@ -1,0 +1,9 @@
+app:
+    width: 640
+    height: 502
+    center: true
+    fullscreen: false
+    fullscreenenable: false
+    show: false
+    title: "ks_1604"
+maxListeners: 1

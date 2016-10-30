@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+   
+    <head>
+        <meta charset="UTF-8">
+        <title>ks_1604</title>
+        <meta http-equiv="pragma" content="no-cache">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="content-style-type" content="text/css">
+        <meta http-equiv="content-script-type" content="text/javascript">
+        <link rel="stylesheet" href="resources/css/base.css">
+        <link rel="stylesheet" href="resources/css/layout.css">
+    </head>
+    
+    <body>
+        
+        <video id="video"></video>
+        <canvas id="capture"></canvas>
+        
+        <div id="chatSession">
+            <a href="javascript:void(0)" onclick="window.location.reload()">
+                <div id="reloadBtn">戻る</div>
+            </a>
+            
+            <div id="chatAreaBackground"></div>
+            <div id="chatArea"></div>
+
+            <div id="inputArea">
+                <div id="inputAreaWrap">
+                    <textarea id="input"></textarea>
+                    <a href="javascript: void(0)">
+                        <img src="resources/recording.png" id="toggleBtn" width="25px" height="25px" style="bottom:15px;right:190px;position:fixed">
+                    </a>
+                    <a href="javascript: void(0)" onclick="sendMessage('message')">
+                        <div id="sendBtn">送信</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <div id="captureSession">
+            <a href="javascript: void(0)" onclick="capture()">
+                <div id="captureBtn">Capture</div>
+            </a>
+        </div>
+        
+        <script src="/socket.io/socket.io.js"></script>
+        <script src="resources/js/preload.js"></script>
+        <script src="resources/js/capture.js"></script>
+        <script src="resources/js/messanger.js"></script>
+            
+    </body>
+    
+</html>

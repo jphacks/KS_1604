@@ -1,0 +1,151 @@
+body {
+    font-size: 13px;
+    font-family: sans-serif
+}
+#capture {
+    display: none;
+}
+
+video {
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed
+}
+
+#chatAreaBackground {
+    width: 100%;
+    height: 100%;
+    background: rgba( 0, 0, 0, .5 );
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+}
+#chatArea {
+    width: 384px;
+    top: 0;
+    left: 128px;
+    position: absolute;
+    z-index: 1001;
+    margin-bottom:70px
+}
+.icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%
+}
+.message {
+    margin-top: 20px;
+}
+.message-icon {
+    float: left
+}
+.message-message {
+    margin-left: 20px;
+    background: rgba( 255, 255, 255, 1 );
+    border-radius: 10px;
+    padding: 10px;
+    float: left
+}
+.line {
+    width: 384px;
+    height: auto;
+}
+.me .message-message {
+    margin: 0;
+    background: rgba( 193, 246, 165, 1 )
+}
+.me .message-icon {
+    margin-left: 20px;
+}
+
+#inputArea {
+    width: 100%;
+    height: 50px;
+    background: rgba( 255, 255, 255, 1 );
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1002;
+}
+#sendBtn {
+    width: 50px;
+    height: 35px;
+    line-height: 27pt;
+    text-align: center;
+    background: rgba( 74, 144, 226, 1 );
+    color: rgba(255,255,255,1);
+    border-radius: 3px;
+    float: left;
+    margin-top: 7.5px;
+}
+#input {
+    width: 309px;
+    float: left;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    padding: 0 10px;
+    padding-top: 10px;
+    margin-top: 7.5px;
+    border: 0;
+    margin-right: 5px;
+    border-bottom: 1px solid rgba( 100, 100, 100, 1)
+}
+#inputAreaWrap {
+    width: 384px;
+    left: 128px;
+    position: absolute;
+}
+#input:focus {
+    outline: none
+}
+
+#chatSession {
+    z-index: 1000;
+    display: none;
+}
+#captureSession {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+#captureBtn {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 5px solid rgba( 255,255,255,.2 );
+    background: rgba(255,255,255,.2);
+    text-align: center;
+    line-height: 150pt;
+    font-size: 25px;
+    color: rgba( 0,0,0,1 );
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+}
+#reloadBtn {
+    width: 50px;
+    height: 35px;
+    line-height: 27pt;
+    text-align: center;
+    background: rgba( 255,255,255,1 );
+    color: rgba(0,0,0,1);
+    border-radius: 3px;
+    float: left;
+    margin-top: 7.5px;
+    top: 10px;
+    left: 20px;
+    position: fixed;
+    z-index: 10000;
+}
